@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -117,8 +118,13 @@ class ProductCard extends StatelessWidget {
             ),
           ),
           ElevatedButton(
-            onPressed: () {
-              // parametro que aceeita a funcao de clicar no botao
+            onPressed: () async {
+              Uri url = Uri.parse("https://www.damatasflores.com.br/");
+              if (await canLaunchUrl(url)) {
+                await launchUrl(url, mode: LaunchMode.externalApplication);
+              } else {
+                throw 'Não foi possível abrir o link';
+              }
             },
             style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all(
@@ -138,7 +144,7 @@ class ProductCard extends StatelessWidget {
                 ),
               ),
             ),
-            child: Text("Comprar agora"), //chamada para a acao
+            child: Text("Comprar agora"), // Chamada para a ação
           ),
         ],
       ),
