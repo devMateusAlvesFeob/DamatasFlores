@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart'; // Importamos o pacote Flutter de Material Design para fornecer widgets e ferramentas
 import 'sobre.dart'; // Importa o arquivo sobre.dart para conseguir redirecionar a pagina
 import 'amor.dart'; // Importa o arquivo amor.dart para conseguir redirecionar a pagina
+import 'desculpas.dart'; // Importa o arquivo desculpas.dart para conseguir redirecionar a pagina
+import 'aniversario.dart'; // Importa o arquivo desculpas.dart para conseguir redirecionar a pagina
 
 void main() {
   runApp(
@@ -103,9 +105,29 @@ class MyHomePage extends StatelessWidget {
                 // Chama a função _buildButton para criar o botão "Amor".
                 _buildButton(
                   'Desculpas',
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder:
+                            (context) =>
+                                Desculpas(), // Redireciona para a página Amor
+                      ),
+                    );
+                  },
                 ), // Chama a função _buildButton para criar o botão "Desculpas".
                 _buildButton(
                   'Aniversário',
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder:
+                            (context) =>
+                                Aniversario(), // Redireciona para a página Amor
+                      ),
+                    );
+                  },
                 ), // Chama a função _buildButton para criar o botão "Aniversário".
                 _buildButton(
                   'Sobre nós',
