@@ -63,6 +63,7 @@ flutter:
     - assets/images/logodamatas.png
     - assets/images/amor1.png
     - assets/images/amor2.png
+    - assets/images/amor3.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
