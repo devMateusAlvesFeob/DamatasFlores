@@ -15,7 +15,6 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-
 Projeto integrado da UNIFEOB 1/2025
 
 decidimos desenvolver uma solução que proporcionasse uma experiência aprimorada ao usuário. O resultado desse trabalho foi a criação de um aplicativo destinado a uma loja floricultura, permitindo que os clientes fiquem atualizados sobre as últimas novidades e ofertas.
@@ -24,7 +23,7 @@ Para oferecer uma navegação intuitiva e interativa, implementamos botões que 
 
 No desenvolvimento do aplicativo, utilizamos Dart e Flutter, além de um emulador Android para testar e otimizar a experiência do usuário. Todas as imagens incorporadas ao aplicativo foram criadas pela equipe, garantindo um design original. O projeto foi baseado em um protótipo previamente planejado, com o objetivo de criar uma solução que refletisse de forma realista as necessidades e expectativas da empresa.
 
-***MEMBROS DA EQUIPE
+MEMBROS DA EQUIPE
 
 Alan Cesar Pereira, 1012023100411
 Leonardo Lopes Caetano, 1012023100049
